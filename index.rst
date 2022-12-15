@@ -1,10 +1,10 @@
-Zammad Agent Documentation
-==========================
+Zammad 用户使用手册
+===================
 
 .. toctree::
    :maxdepth: 3
    :titlesonly:
-   :caption: Basics
+   :caption: 基本
    :name: basics
 
    /basics/zammad-glossary
@@ -15,7 +15,7 @@ Zammad Agent Documentation
 .. toctree::
    :maxdepth: 2
    :titlesonly:
-   :caption: Advanced Topics
+   :caption: 高级
    :name: advanced-topics
 
    /advanced/ticket-actions
@@ -31,7 +31,7 @@ Zammad Agent Documentation
 .. toctree::
    :maxdepth: 1
    :titlesonly:
-   :caption: Extras
+   :caption: 扩展
    :name: extras
 
    /extras/customers

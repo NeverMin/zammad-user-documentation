@@ -1,35 +1,35 @@
-﻿Search for Tickets
-==================
+﻿搜索工单
+========
 
-Looking for an archived ticket? Use the **search bar**.
+想查找已归档的工单吗? 请使用 **搜索栏**.
 
 .. figure:: /images/basics/find-ticket/search.png
+   :alt: 搜索栏
    :align: center
    :scale: 40%
 
-   Results appear immediately under the search bar as you type.
+   搜索栏下方立即出现搜索结果.
 
-.. hint:: It’s not just for tickets! Results cover 💬 **chat logs**,
-   👨 **customers**, and 🏢 **organizations**, too.
+.. hint:: 它不仅适用于工单! 搜索结果还包括 💬 **对话**,
+   👨 **客户**, 和 🏢 **公司**.
 
-   **🔍 Here are just a few of the places the search engine will look:**
+   **🔍 搜索引擎将搜索以下几个地方:**
 
-   * 📝 message subject/content
-   * 👩 recipient names & email addresses
-   * 📎 text in file attachments (really!)
-   * 🏷️ user/organization metadata (*e.g.,* notes stored on customer profiles)
+   * 📝 消息主题/内容
+   * 👩 收件人姓名和电子邮件地址
+   * 📎 文件附件中的文本 (真的!)
+   * 🏷️ 用户或公司的元数据 (*例如* 保存在客户档案上的备注)
    
-   You can find a detailed search document in our
-   `Advanced Search <../../advanced/search.html>`_ page.
+   你可以在高级搜索里找到详细的说明, 请点这里访问
+   `高级搜索 <../../advanced/search.html>`_ 的使用方法.
    
 
 .. figure:: /images/basics/find-ticket/search-details.png
    :align: center
 
-   For detailed results,
-   click the **Show Search Details →** link
-   just above the autocomplete list.
+   要查看详细的搜索结果,
+   请在自动完成列表上方点击 **显示搜索详情 →** 这个连接.
 
-.. tip:: **🖱️ UI Protip**
+.. tip:: **🖱️ 小技巧**
 
-   Click on column headings to change the display order.
+   单击列标题可更改显示顺序哦.

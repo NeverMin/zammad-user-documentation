@@ -1,13 +1,13 @@
-Finding Tickets
-===============
+查找工单
+========
 
-If you plan to work on tickets, you’d better know how to find ’em first. 
+如果你计划处理工单, 首先最好了解如何找到它们. 
 
-Read on to learn how to check for new tickets, and dig up old ones.
+继续阅读, 了解如何检查新工单, 并了解如何找到旧工单的方法.
 
 .. toctree::
    :maxdepth: 1
    :titlesonly:
 
-   by Browsing <find-ticket/browse>
-   by Searching <find-ticket/search>
+   浏览工单 <find-ticket/browse>
+   搜索工单 <find-ticket/search>

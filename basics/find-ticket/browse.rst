@@ -1,29 +1,29 @@
-﻿Browse for Tickets
+﻿浏览工单
 ==================
 
-Looking for a ticket to work on? Check the **overviews** menu.
+如果你正在寻找工单来处理, 可以在在 **概览** 菜单中查看.
 
 .. figure:: /images/basics/find-ticket/browse.jpg
-   :alt: Sample view of Overviews
+   :alt: 概览视图例子
    :align: center
 
-   Click **Overviews** in the main menu to browse tickets.
+   在主菜单中点击 **概览** 即可浏览工单.
 
-.. hint:: 📥 Think of overviews as **inboxes**, each with a different filter
-   for the tickets it displays.
+.. hint:: 📥 把概览想象成是有不同过滤规则的 **收件箱**, 特定的规则显示指定条件的工单.
 
-There are **six built-in overviews**
-(Zammad admin may `create more`_ with custom-defined filters):
+这里有 **七条内置的概览**
+(Zammad 的管理员可以通过 `创建更多`_ 自定义条件的规则):
 
-* **My assigned tickets** (*open/pending* only)
-* **Unassigned & Open**
-* **My pending reached tickets** (previously marked *pending* and currently due)
-* **Open** (system-wide)
-* **Pending reached** (system-wide, previously marked *pending* and currently due)
-* **Escalated** (system-wide, failing to meet a `service-level agreement`_)
+* **指派给我的工单My assigned tickets** (*open/pending* only)
+* **处理中未指派的工单Unassigned & Open**
+* **我的挂起到达提醒的工单My pending reached tickets** (previously marked *pending* and currently due)
+* **我订阅的工单My Subscribed Tickets** ()
+* **处理中的工单Open** (system-wide)
+* **挂起到达提醒的工单Pending reached** (system-wide, previously marked *pending* and currently due)
+* **升级的工单** (system-wide, failing to meet a `服务水平协议`_)
 
-.. _create more: https://admin-docs.zammad.org/en/latest/manage/overviews.html
-.. _service-level agreement:
+.. _创建更多: https://admin-docs.zammad.org/en/latest/manage/overviews.html
+.. _服务水平协议:
    https://admin-docs.zammad.org/en/latest/manage/slas/index.html
 
 .. tip:: **🖱️ UI Protip**
