@@ -52,7 +52,7 @@ the customer will receive your response in a Twitter DM).
    with people who don’t have Zammad
    (like a third-party supplier).
 
-.. tip:: **🖱️ UI Protip**
+.. tip:: **🖱️ 小技巧**
 
    Click on a message to see detailed information about it.
 

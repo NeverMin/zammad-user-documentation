@@ -45,7 +45,7 @@ Customer
 
       Autocomplete can’t find customers by name.
 
-   .. tip:: **🖱️ UI Protip**
+   .. tip:: **🖱️ 小技巧**
 
       Once a customer has been selected,
       her profile will be accessible from the **ticket pane**.

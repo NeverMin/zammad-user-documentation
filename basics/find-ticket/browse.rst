@@ -26,7 +26,7 @@
 .. _服务水平协议:
    https://admin-docs.zammad.org/en/latest/manage/slas/index.html
 
-.. tip:: **🖱️ UI Protip**
+.. tip:: **🖱️ 小技巧**
 
    * Click on column headings to change the display order.
    * Click-and-drag column dividers to adjust their width.

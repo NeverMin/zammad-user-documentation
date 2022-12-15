@@ -13,7 +13,7 @@ an expert user.
 
    The keyboard shortcut cheat sheet on Windows.
 
-.. tip:: **🖱️ UI Protip**
+.. tip:: **🖱️ 小技巧**
 
    Click on your avatar at the bottom of the main menu to access the
    **keyboard shortcuts cheat sheet**.

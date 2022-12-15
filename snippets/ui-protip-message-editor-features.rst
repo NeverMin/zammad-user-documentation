@@ -1,4 +1,4 @@
-.. tip:: **🖱️ UI Protip**
+.. tip:: **🖱️ 小技巧**
 
    * The message editor supports 📋 copying-and-pasting
      (or dragging-and-dropping) of **🔤 rich text**, **🌄 images**

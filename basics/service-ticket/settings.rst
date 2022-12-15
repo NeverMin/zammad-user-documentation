@@ -48,7 +48,7 @@ text. (Your highlights are visible to other agents.)
 
 ----
 
-.. tip:: **🖱️ UI Protip**
+.. tip:: **🖱️ 小技巧**
 
    Additional actions are available via the **submenu**:
 

@@ -22,7 +22,7 @@ menu area. These are your **open tabs.**
       4. Organizations
       5. Omnisearch
 
-.. tip:: **🖱️ UI Protip**
+.. tip:: **🖱️ 小技巧**
 
    * :doc:`Ticket states </basics/service-ticket/settings/state>` are
      **color-coded:**

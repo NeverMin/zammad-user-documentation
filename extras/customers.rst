@@ -9,7 +9,7 @@ Use the **ticket pane** to manage customer profiles.
 
    Click the 👨 tab in the ticket pane to see the customer’s profile.
 
-.. tip:: **🖱️ UI Protip**
+.. tip:: **🖱️ 小技巧**
 
    .. figure:: /images/extras/customers-tickets-mouseover.png
       :alt: Customer ticket summary (mouseover)
