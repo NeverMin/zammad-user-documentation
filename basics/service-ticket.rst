@@ -1,4 +1,4 @@
-Servicing Tickets
+服务
 =================
 
 This is where you’ll spend the vast majority of your time in Zammad.

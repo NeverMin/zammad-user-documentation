@@ -1,4 +1,4 @@
-﻿Shared Drafts
+﻿分享草稿
 =============
 
 Share drafts for new or existing tickets with other agents of your group.

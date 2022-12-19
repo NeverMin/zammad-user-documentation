@@ -1,4 +1,4 @@
-Checking Your Stats
+信息中心
 ===================
 
 The **dashboard** is the first thing you’ll see after logging in. Monitor your

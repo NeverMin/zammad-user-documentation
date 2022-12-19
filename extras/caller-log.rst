@@ -1,4 +1,4 @@
-﻿Caller Log
+﻿呼叫日志
 ==========
 
 View and manage call logs from the **phone** panel.

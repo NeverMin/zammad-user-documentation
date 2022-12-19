@@ -1,7 +1,7 @@
 :orphan:
 
-Tabs
-====
+任务栏
+======
 
 As you click through Zammad, you will see a list of entries appear in the main
 menu area. These are your **open tabs.**

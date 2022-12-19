@@ -1,5 +1,5 @@
-﻿Time Accounting
-===============
+﻿工时
+====
 
 Zammad supports detailed time accounting
 to help administrators keep track of how much time you spend

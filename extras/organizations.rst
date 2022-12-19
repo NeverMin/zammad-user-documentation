@@ -1,4 +1,4 @@
-Organizations
+组织
 =============
 
 Tickets track communication between individuals, but oftentimes,

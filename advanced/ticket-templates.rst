@@ -1,7 +1,7 @@
 .. _ticket_templates:
 
-Ticket Templates
-================
+工单模板
+========
 
 If you find yourself creating lots of tickets with the same basic attributes,
 use **ticket templates** to fill them in with a single click next time.

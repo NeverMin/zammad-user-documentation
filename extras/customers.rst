@@ -1,4 +1,4 @@
-Customers
+客户
 =========
 
 Use the **ticket pane** to manage customer profiles.

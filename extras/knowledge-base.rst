@@ -1,4 +1,4 @@
-﻿Knowledge Base
+﻿知识库
 ==============
 
 Manage, edit, and reorganize knowledge base articles from the

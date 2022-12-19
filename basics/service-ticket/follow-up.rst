@@ -1,4 +1,4 @@
-Following Up
+跟进
 ============
 
 Generally, “working on existing tickets” means

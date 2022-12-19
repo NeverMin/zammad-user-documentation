@@ -1,46 +1,51 @@
-Advanced Search
-===============
+高级搜索
+========
 
-With Zammad, you can limit your search to specific Information. 
-This allows you to find e.g. Tickets with specific key words and states. 
-Below information will help you to improve your search results.
+使用 Zammad, 您可以将搜索限制在特定信息上. 这样, 您就可以查找具有特定关键字和状态的工单. 
+下面的信息将帮助您提高搜索结果.
 
-For instance you can search for a specific customer 
-by using ``customer.attribute``::
+例如, 您可以使用 ``customer.attribute`` 搜索特定客户::
 
-   customer.firstname: John
+   customer.firstname: 三
 
-or::
+或::
 
-   customer.lastname: Doe
+   customer.lastname: 张
 
 
-If you want to run a more complex search you can use conditions 
-with ``()`` and ``AND``/``OR`` options::
+你可以使用带有 ``()`` 和 ``AND`` / ``OR`` 组合更复杂的条件进行搜索, 例如::
 
    state.name: open AND (article.from:me OR article.from:somebody)
 
-.. note:: **🤓 Search phrases changed for Zammad 4.0**
+.. hint::
+   
+   上面的 ``open`` 不能使中文的 **处理中**, 同样搜索 **已关闭** 的工单是使用 ``closed``.
 
-   With Zammad <=3.6 the following keys contained a string only: 
+例如::
+
+   state.name: closed AND (article.from:me OR article.from:somebody)
+
+.. note:: **🤓 Zammad 在 4.0 中对搜索语法作了重大变动**
+
+   在 Zammad 3.6 以前的版本, 仅能搜索以下的关键词: 
 
       * group
       * priority
       * state
       * organization
 
-   With Zammad >=4.0 these keys contain the whole object. This means you 
-   now have to add ``.name`` (e. g. ``group.name`` or ``priority.name``) 
-   to receive the same search results.
+   在 Zammad 4.0 之后, 关键词需要具体到某个对象. 这意味着需要在关键词后面
+   添加 ``.name`` (例如 ``group.name`` 或 ``priority.name``) 
+   来缩小搜索的范围.
 
 
-Available attributes
+可用的搜索关键词
 --------------------
 
 .. hint:: 
 
-   For a more detailed list of available attributes please take a look into our 
-   `Zammad Admin-Documentation 
+   如果需要所有的搜索关键词, 请参考 
+   `Zammad 系统管理员手册 
    <https://docs.zammad.org/en/latest/install/elasticsearch/indexed-attributes.html>`_ 
 
 
@@ -49,18 +54,18 @@ Available attributes
    <br />
 
 .. csv-table:: Attributes and their usuage
-   :header: "Attribute", "possible Values", "Example", "Description"
+   :header: "关键词", "值", "例子", "描述"
    :widths: 10, 10, 10, 20
 
-   "number", "1118566", "number:1118566 |br|\ number:11185*", "Search for a Ticketnumber"
-   "title", "some title", "title:""some title"" |br|\ title:Printer |br|\ title: ""some ti*""", "If you need to use spacings in the search phrase, use quotes. Zammad will do a AND-Search over the given words. You can also use a single keyword without quotation."
-   "created_at", "2018-11-18", "created_at:2018-11-18 |br|\ created_at:[2018-11-15 TO 2018-11-18] |br|\ created_at:>now-1h", "You can either use a simple date, a date-range or >now-xh. Please note that the date format needs to be YYYY-MM-DD"
-   "state.name", "new |br|\ open |br|\ closed", "state.name: new |br|\ state.name:new OR open", "You can filter for specific ticket states (and even combine them with an OR). Please note that you need to use the english namings for states, unless you have custom ticket states defined in your instance."
-   "article_count", "5 |br|\ [5 TO 10] |br|\ [5 TO \*] |br|\ [\* TO 5]", "article_count:5 |br|\ article_count: [5 TO 10] |br|\ article_count:[5 TO \*] |br|\ article_count:[\* TO 5]", "You can search for Tickets with a specific number of articles (you can even search for everything with 5 or more articles or even up to 5 articles, if needed)."
-   "article.from", "\*bob\*", "article.from:\*bob\*", "Show all tickets that contain articles from ""Bob"""
-   "article.body", "heat |br|\ heat~ |br|\ /joh?n(ath[oa]n)/", "article.body:heat |br|\ article.body:heat~ |br|\ articlebody:/joh?n(ath[oa]n)/", "First example shows every ticket containing the word ""heat"" - you can also use the fuzzy operator ""~"" to search for similar words like e.g. like ""head"". Zammad will also allow you to use regular expressions, where ever the attributes allows it."
+   "工单号", "1118566", "number:1118566 |br|\ number:11185*", "直接搜索工单号, 支持通配符."
+   "主题", "some title", "title:""some title"" |br|\ title:Printer |br|\ title: ""some ti*""", "If you need to use spacings in the search phrase, use quotes. Zammad will do a AND-Search over the given words. You can also use a single keyword without quotation."
+   "工单创建时间", "2018-11-18", "created_at:2018-11-18 |br|\ created_at:[2018-11-15 TO 2018-11-18] |br|\ created_at:>now-1h", "You can either use a simple date, a date-range or >now-xh. Please note that the date format needs to be YYYY-MM-DD"
+   "工单状态", "new |br|\ open |br|\ closed", "state.name: new |br|\ state.name:new OR open", "You can filter for specific ticket states (and even combine them with an OR). Please note that you need to use the english namings for states, unless you have custom ticket states defined in your instance."
+   "消息数量", "5 |br|\ [5 TO 10] |br|\ [5 TO \*] |br|\ [\* TO 5]", "article_count:5 |br|\ article_count: [5 TO 10] |br|\ article_count:[5 TO \*] |br|\ article_count:[\* TO 5]", "You can search for Tickets with a specific number of articles (you can even search for everything with 5 or more articles or even up to 5 articles, if needed)."
+   "消息来自", "\*bob\*", "article.from:\*bob\*", "Show all tickets that contain articles from ""Bob"""
+   "消息正文", "heat |br|\ heat~ |br|\ /joh?n(ath[oa]n)/", "article.body:heat |br|\ article.body:heat~ |br|\ articlebody:/joh?n(ath[oa]n)/", "First example shows every ticket containing the word ""heat"" - you can also use the fuzzy operator ""~"" to search for similar words like e.g. like ""head"". Zammad will also allow you to use regular expressions, where ever the attributes allows it."
    
-.. hint:: **Combining search phrases**
+.. hint:: **复杂的搜索组合**
 
   You can combine search phrases by using ``AND``, ``OR`` and ``TO``, 
   depending on the situation and phrases you use. If needed, you can parts of 
@@ -70,7 +75,7 @@ Available attributes
   Below are some examples that you could use with this:
   
   .. csv-table:: Examples for search phrase combinations
-   :header: "Search phrase", "Description"
+   :header: "搜索组合", "描述"
    :widths: 10, 20
    
    "state.name:(closed OR open) AND (priority.name:""2 normal"" OR tags:feedback)", "Show every ticket that state is either closed or open and has priority normal or the tag feedback."
@@ -83,8 +88,8 @@ Some Ticket attributes and their type
 
 Below you can find the most important attributes sorted by ticket and article.
 
-Ticket attributes
-^^^^^^^^^^^^^^^^^
+与工单有关的关键词
+^^^^^^^^^^^^^^^^^^
 
    * number: string
    * title: string
@@ -108,7 +113,7 @@ Ticket attributes
    * escalation_at: timestamp
    * pending_time: timestamp
 
-Article attributes
+与消息有关的关键词
 ^^^^^^^^^^^^^^^^^^
 
    * article.from: string

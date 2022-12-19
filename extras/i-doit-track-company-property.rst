@@ -1,4 +1,4 @@
-i-doit: Use Tickets to Track Company Property
+i-doit: 使用工单跟踪公司资产
 =============================================
 
 With `i-doit <https://www.i-doit.com/>`_ integration,

@@ -1,4 +1,4 @@
-Priority
+优先级
 ========
 
 A ticket’s **priority** is simply a ranking (from 1 to 3)

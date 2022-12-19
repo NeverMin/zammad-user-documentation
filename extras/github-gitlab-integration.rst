@@ -1,4 +1,4 @@
-GitHub / GitLab Integration
+GitHub / GitLab 集成
 ===========================
 
 With issue tracker integration,

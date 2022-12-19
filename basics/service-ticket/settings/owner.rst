@@ -1,5 +1,5 @@
-Owner
-=====
+所有者
+======
 
 A ticket’s **owner** is simply
 *the agent that is currently responsible for it*.

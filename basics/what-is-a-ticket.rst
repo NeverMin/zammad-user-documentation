@@ -1,35 +1,32 @@
-What is a Ticket?
-=================
+工单是什么?
+===========
 
-In Zammad, **tickets** are used to track customer service requests.
-The first time a customer emails you (or the company) about something,
-Zammad creates a new ticket.
-Each message sent between you and the customer is added to that ticket
-until the issue is resolved,
-the customer is happy,
-and the ticket is finally **closed**.
+在 Zammad 中, **工单** 是用来跟踪客户服务请求的. 当客户第一次给你 (或公司) 发
+邮件询问某事时, Zammad 会创建一个新的工单. 在你和客户之间发送的每条消息都会添加到
+该工单中, 直到问题解决, 客户满意为止, 最终 **关闭** 工单.
 
-So in a basic sense, a ticket is
-**a thread of messages between you and a customer
-about a single issue**.
+所以, 基本上, **工单就是你和客户之间有关某个问题的消息会话**.
+
 
 .. figure:: /images/basics/what-is-a-ticket.png
-   :alt: Ticket thread view
+   :alt: 工单会话视图
    :align: center
 
-   A ticket is a thread of messages between a customer and an agent.
+   工单是客户和服务人员之间的消息会话.
 
-.. hint:: You know you’re doing a great job when you
-   1) respond to tickets quickly and
-   2) get them closed in a timely manner.
+.. hint:: 你知道你在做一件很棒的事! 当你
 
-   👀 :doc:`Keep an eye on your dashboard </extras/dashboard>`
-   to see how well you’re keeping up.
+   1) 快速响应工单
+
+   2) 并及时关闭.
+
+   👀 你可以通过关注 :doc:`信息中心 </extras/dashboard>`
+   了解自己的表现.
 
 .. _ticket_settings:
 
-Ticket Settings
----------------
+工单设置
+--------
 
 Tickets also have metadata attached to them to make them easier to manage.
 For instance, tickets have a customer and (optionally) an agent;

@@ -1,7 +1,7 @@
 :orphan:
 
-Keyboard Shortcuts
-==================
+快捷键
+======
 
 Zammad supports a wide array of keyboard shortcuts to expedite your workflow as
 an expert user.

@@ -1,4 +1,4 @@
-Tags
+标签
 ====
 
 **Tags** are custom-defined labels that can be applied to tickets

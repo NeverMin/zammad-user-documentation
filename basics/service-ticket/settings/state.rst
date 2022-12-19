@@ -1,4 +1,4 @@
-State
+状态
 =====
 
 The **state** of a ticket refers to *its progress toward completion,*

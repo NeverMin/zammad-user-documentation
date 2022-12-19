@@ -1,5 +1,5 @@
-Macros
-======
+宏
+===
 
 Macros are **🖱️ one-click shortcuts** for applying changes to a ticket.
 

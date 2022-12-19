@@ -1,4 +1,4 @@
-﻿Live Chat
+﻿对话
 =========
 
 Talk to customers in real time from the **customer chat** panel.

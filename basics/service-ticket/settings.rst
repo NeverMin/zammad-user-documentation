@@ -1,4 +1,4 @@
-Ticket Settings
+工单设置
 ===============
 
 Use the **ticket pane** to manage a ticket’s settings:

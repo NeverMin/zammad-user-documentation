@@ -1,4 +1,4 @@
-﻿Profile & Settings
+﻿个人偏好设置
 ==================
 
 Click on your avatar at the bottom of the main menu

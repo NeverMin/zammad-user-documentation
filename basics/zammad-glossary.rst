@@ -1,4 +1,4 @@
-Zammad Glossary
+Zammad 术语表
 ===============
 
 Ever wondered what we mean by a specific term?

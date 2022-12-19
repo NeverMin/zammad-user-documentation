@@ -2,16 +2,16 @@
    :widths: 5 45
 
    * - |grn|
-     - **Closed**
+     - **关闭**
    * - |blk|
-     - **Postponed**
-       (Marked as pending; no immediate action required.)
+     - **挂起**
+       (标记为暂缓, 不需要马上采取行动.)
    * - |ylw|
-     - **New / Open**
-       (Ready for action.)
+     - **新建 / 处理中**
+       (马上采处行动处理工单.)
    * - |red|
-     - **Escalated**
-       (Requires urgent attention.)
+     - **升级中**
+       (需要紧急处理.)
 
 .. |grn| raw:: html
 
