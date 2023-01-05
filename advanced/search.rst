@@ -53,40 +53,38 @@
 
    <br />
 
-.. csv-table:: Attributes and their usuage
+.. csv-table:: 属性及其用法
    :header: "关键词", "值", "例子", "描述"
    :widths: 10, 10, 10, 20
 
    "工单号", "1118566", "number:1118566 |br|\ number:11185*", "直接搜索工单号, 支持通配符."
-   "主题", "some title", "title:""some title"" |br|\ title:Printer |br|\ title: ""some ti*""", "If you need to use spacings in the search phrase, use quotes. Zammad will do a AND-Search over the given words. You can also use a single keyword without quotation."
-   "工单创建时间", "2018-11-18", "created_at:2018-11-18 |br|\ created_at:[2018-11-15 TO 2018-11-18] |br|\ created_at:>now-1h", "You can either use a simple date, a date-range or >now-xh. Please note that the date format needs to be YYYY-MM-DD"
-   "工单状态", "new |br|\ open |br|\ closed", "state.name: new |br|\ state.name:new OR open", "You can filter for specific ticket states (and even combine them with an OR). Please note that you need to use the english namings for states, unless you have custom ticket states defined in your instance."
-   "消息数量", "5 |br|\ [5 TO 10] |br|\ [5 TO \*] |br|\ [\* TO 5]", "article_count:5 |br|\ article_count: [5 TO 10] |br|\ article_count:[5 TO \*] |br|\ article_count:[\* TO 5]", "You can search for Tickets with a specific number of articles (you can even search for everything with 5 or more articles or even up to 5 articles, if needed)."
-   "消息来自", "\*bob\*", "article.from:\*bob\*", "Show all tickets that contain articles from ""Bob"""
-   "消息正文", "heat |br|\ heat~ |br|\ /joh?n(ath[oa]n)/", "article.body:heat |br|\ article.body:heat~ |br|\ articlebody:/joh?n(ath[oa]n)/", "First example shows every ticket containing the word ""heat"" - you can also use the fuzzy operator ""~"" to search for similar words like e.g. like ""head"". Zammad will also allow you to use regular expressions, where ever the attributes allows it."
+   "主题", "some title", "title:""some title"" |br|\ title:Printer |br|\ title: ""some ti*""", "如果搜索关键词中间含用空格字符, 请使用双引号, 这样 Zammad 会把引号内的内容视作一个关建词进行搜索. 单一关键词是不需要引号的."
+   "工单创建时间", "2018-11-18", "created_at:2018-11-18 |br|\ created_at:[2018-11-15 TO 2018-11-18] |br|\ created_at:>now-1h", "你可以使用简单的日期, 日期范围或者 >now-xh。请注意, 日期格式应为 YYYY-MM-DD ."
+   "工单状态", "new |br|\ open |br|\ closed", "state.name: new |br|\ state.name:new OR open", "你可以为特定的工单状态进行过滤 (甚至可以使用 OR 进行组合过滤). 请注意, 非在你的实例中定义了自定义工单状态, 否则需要使用英文命名的状态进行过滤."
+   "消息数量", "5 |br|\ [5 TO 10] |br|\ [5 TO \*] |br|\ [\* TO 5]", "article_count:5 |br|\ article_count: [5 TO 10] |br|\ article_count:[5 TO \*] |br|\ article_count:[\* TO 5]", "你可以搜索具有特定数量文章的工单 (甚至可以搜索所有文章数量大于 5 的工单或者文章数量不超过 5 的工单, 如果需要的话)."
+   "消息来自", "\*bob\*", "article.from:\*bob\*", "显示所有工单消息来源包含有""Bob""的内容."
+   "消息正文", "heat |br|\ heat~ |br|\ /joh?n(ath[oa]n)/", "article.body:heat |br|\ article.body:heat~ |br|\ articlebody:/joh?n(ath[oa]n)/", "第一个例子展示了包含单词 ""heat"" 的所有工单 - 你还可以使用模糊操作符 ""~"" 来搜索类似的单词, 例如 ""head"". Zammad 还允许你在允许使用属性的地方使用正则表达式, 例如 ""/joh?n(ath[oa]n)/"" 匹配字符串中包含 ""john"" 或 ""johnathan"" 的内容, ""(ath[oa]n)"" 表示 ""athan"" 或 ""athon"", 其中 [] 表示匹配中括号内的任意一个字符."
    
 .. hint:: **复杂的搜索组合**
 
-  You can combine search phrases by using ``AND``, ``OR`` and ``TO``, 
-  depending on the situation and phrases you use. If needed, you can parts of 
-  your search phrase for complex searches with ``()``. This allows you to 
-  combine several phrases with different dependencies (AND/OR). In case you 
-  receive search results that you want to exclude, you can use negation ``!``. 
-  Below are some examples that you could use with this:
+  你可以使用 ``AND``, ``OR`` 和 ``TO`` 组合搜索关键词组合进一步缩小返回的结果,
+  如果需要, 还可以用括号 ``()`` 将复杂搜索的关键词分开. 这样你就可以使用更多的 (AND/OR)
+  实现更多的搜索条件. 如果你想排序某些搜索结果, 你可以使用否定 ``!``.
+  下面提供一些搜索组合范例:
   
-  .. csv-table:: Examples for search phrase combinations
+  .. csv-table:: 复杂的搜索组合示例
    :header: "搜索组合", "描述"
    :widths: 10, 20
    
-   "state.name:(closed OR open) AND (priority.name:""2 normal"" OR tags:feedback)", "Show every ticket that state is either closed or open and has priority normal or the tag feedback."
-   "state.name:(closed OR open) AND (priority.name:""2 normal"" OR tags:feedback) AND !(*Zammad*)", "This gets the same result as above, expect that we don't want the ticket to contain anything matching to ""Zammad"""
-   "owner.email:bob@example.net AND state.name:(open OR new)", "Show Tickets from bob@example.net that are either open or new"
-   "state.name:pending* AND article_count:[1 TO 5]", "Show everything with any pending state and an article count of 1 to 5."
+   "state.name:(closed OR open) AND (priority.name:""2 normal"" OR tags:反馈)", "显示所有状态为 closed 或 open, 并且优先为 ""2 normal"" 或标记为 ""反馈"" 的工单."
+   "state.name:(closed OR open) AND (priority.name:""2 normal"" OR tags:反馈) AND !(*Zammad*)", "这个结果与上面有些相似, 但从结果中排序了带有 ""Zammad"" 单词的工单."
+   "owner.email:bob@example.net AND state.name:(open OR new)", "显示所以来自于 bob@example.net , 并且状态为处理中 open 或新建 new 的工单."
+   "state.name:pending* AND article_count:[1 TO 5]", "显示所有任何挂起 pending 状态且消息数为1到5的所有内容."
 
-Some Ticket attributes and their type
+工单属性及数据类型
 -------------------------------------
 
-Below you can find the most important attributes sorted by ticket and article.
+下面是一些与工单或是消息有关的重要属性.
 
 与工单有关的关键词
 ^^^^^^^^^^^^^^^^^^
