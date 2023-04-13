@@ -73,6 +73,7 @@ $ make gettext
 # manual language-based build (`_build/html/`) (for testing)
 $ make -e SPHINXOPTS="-D language='zh-cn'" html
 $ make -e SPHINXOPTS="-D language='en'" html
+$ python -m http.server --directory _build/html
 ```
 
 ### Localization process
