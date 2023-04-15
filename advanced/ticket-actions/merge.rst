@@ -1,4 +1,4 @@
-Merging Tickets
+合并工单
 ===============
 
 Sometimes, you may end up with two tickets for the same issue
