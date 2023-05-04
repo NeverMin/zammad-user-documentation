@@ -59,7 +59,7 @@
 
    "工单号", "1118566", "number:1118566 |br|\ number:11185*", "直接搜索工单号, 支持通配符."
    "主题", "some title", "title:""some title"" |br|\ title:Printer |br|\ title: ""some ti*""", "如果搜索关键词中间含用空格字符, 请使用双引号, 这样 Zammad 会把引号内的内容视作一个关建词进行搜索. 单一关键词是不需要引号的."
-   "工单创建时间", "2018-11-18", "created_at:2018-11-18 |br|\ created_at:[2018-11-15 TO 2018-11-18] |br|\ created_at:>now-1h", "你可以使用简单的日期, 日期范围或者 >now-xh。请注意, 日期格式应为 YYYY-MM-DD ."
+   "工单创建时间", "2018-11-18", "created_at:2023-03-14 |br|\ created_at:[2023-03-14 TO 2023-10-24] |br|\ created_at:>now-1h", "你可以使用简单的日期, 日期范围或者 >now-xh。请注意, 日期格式应为 YYYY-MM-DD ."
    "工单状态", "new |br|\ open |br|\ closed", "state.name: new |br|\ state.name:new OR open", "你可以为特定的工单状态进行过滤 (甚至可以使用 OR 进行组合过滤). 请注意, 非在你的实例中定义了自定义工单状态, 否则需要使用英文命名的状态进行过滤."
    "消息数量", "5 |br|\ [5 TO 10] |br|\ [5 TO \*] |br|\ [\* TO 5]", "article_count:5 |br|\ article_count: [5 TO 10] |br|\ article_count:[5 TO \*] |br|\ article_count:[\* TO 5]", "你可以搜索具有特定数量文章的工单 (甚至可以搜索所有文章数量大于 5 的工单或者文章数量不超过 5 的工单, 如果需要的话)."
    "消息来自", "\*bob\*", "article.from:\*bob\*", "显示所有工单消息来源包含有""Bob""的内容."
@@ -89,36 +89,36 @@
 与工单有关的关键词
 ^^^^^^^^^^^^^^^^^^
 
-   * number: string
-   * title: string
-   * group: object (group.name, ...)
-   * priority: object (priority.name, ...)
-   * state: object (state.name, ...)
-   * organization: object (organization.name, ...)
-   * owner: object (owner.firstname, owner.lastname, owner.email, ...)
-   * customer: object 
+   * number: 字符串
+   * title: 字符串
+   * group: 对象 (group.name, ...)
+   * priority: 对象 (priority.name, ...)
+   * state: 对象 (state.name, ...)
+   * organization: 对象 (organization.name, ...)
+   * owner: 对象 (owner.firstname, owner.lastname, owner.email, ...)
+   * customer: 对象 
      (customer.firstname, customer.lastname, customer.email, ...)
-   * first_response_at: timestamp
-   * first_response_in_min: integer (business min till first response)
-   * close_at: timestamp
-   * close_in_min: integer (business min till close)
-   * last_contact_at: timestamp (last contact by customer or agent)
-   * last_contact_agent_at: timestamp (last contact by agent)
-   * last_contact_customer_at: timestamp (last contact by customer)
-   * create_article_type: string (email|phone|web|...)
-   * create_article_sender: string (Customer|Agent|System)
-   * article_count: integer
-   * escalation_at: timestamp
-   * pending_time: timestamp
+   * first_response_at: 时间戳
+   * first_response_in_min: 分钟 (工作时间内首次响应的时间)
+   * close_at: 时间戳
+   * close_in_min: 整数 (工作时间内多少分钟之前关闭的工单)
+   * last_contact_at: 时间戳 (客户或服务人员最后一次联系的时间)
+   * last_contact_agent_at: 时间戳 (服务人员最后一次联系的时间)
+   * last_contact_customer_at: 时间戳 (客户最后一次联系的时间)
+   * create_article_type: 字符串 (email|phone|web|...)
+   * create_article_sender: 字符串 (Customer|Agent|System)
+   * article_count: 整数
+   * escalation_at: 时间戳
+   * pending_time: 时间戳
 
 与消息有关的关键词
 ^^^^^^^^^^^^^^^^^^
 
-   * article.from: string
-   * article.to: string
-   * article.cc: string
-   * article.subject: string
-   * article.body: string
-   * article.attachment.title: string (filename of attachment)
-   * article.attachment.content: string (content of attachment)
-   * article.attachment.content_type: string (File type e.g. PDF)
+   * article.from: 字符串
+   * article.to: 字符串
+   * article.cc: 字符串
+   * article.subject: 字符串
+   * article.body: 字符串
+   * article.attachment.title: 字符串 (附件的文件名)
+   * article.attachment.content: 字符串 (附件内容)
+   * article.attachment.content_type: 字符串 (文件类型, 例如 PDF)

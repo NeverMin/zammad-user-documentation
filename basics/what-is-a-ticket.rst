@@ -1,4 +1,4 @@
-工单是什么?
+什么是工单?
 ===========
 
 在 Zammad 中, **工单** 是用来跟踪客户服务请求的. 当客户第一次给你 (或公司) 发
@@ -28,23 +28,14 @@
 工单设置
 --------
 
-Tickets also have metadata attached to them to make them easier to manage.
-For instance, tickets have a customer and (optionally) an agent;
-they can be open or closed (or even be scheduled for later);
-they can be organized into groups;
-and they can even be flagged for high or low priority.
+为方便起见, 我们将这些元数据称为工单的 **设置**, 所有这些设置都可以随时更改. 
+在这里详细解释了每个设置 :doc:`here </basics/service-ticket/settings>`,
+但暂时让我们来概述两个最重要的设置:
 
-For the sake of simplicity,
-we’ll refer to this metadata as the **settings** of a ticket.
-All of these settings can be changed at any time.
-Each setting is explained in detail :doc:`here </basics/service-ticket/settings>`,
-but for the time being, let’s go over the two most important ones:
+所有者 *(可选)*
+   该工单 **当前分配的服务人员** (*例如* 负责人).
 
-Owner *(optional)*
-   The **agent currently assigned to** (*i.e.,* responsible for) the ticket.
-
-State
-   Is the customer still waiting on an answer (**open**), or has the ticket
-   been resolved (**closed**)?
+状态
+   是否客户还在等待服务人员的回复(**打开**), 还是该工单已经解决(**关闭**)?
 
 .. include:: /snippets/ticket-settings-link-list.rst
