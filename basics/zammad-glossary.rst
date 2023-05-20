@@ -1,15 +1,14 @@
 Zammad 术语表
 ===============
 
-Ever wondered what we mean by a specific term?
-We've been collecting the most relevant terms below for your insight.
+你想知道我们对某个特定术语的具体含义是什么吗?
+我们已经把这些相关的术语整理在下面, 以供您参考.
 
 .. note::
 
-   Due to translation alphabetical sorting may be off in non english versions
-   of this page.
+   由于翻译的原因，在非英文版本的页面中，字母顺序排序可能会有所偏差。
 
-Quickly jump to...
+快速跳转...
    `A`_ `B`_ `C`_ `D`_ `E`_ `F`_ `G`_ `H`_ `I`_ `J`_ `K`_ `L`_ `M`_
    `N`_ `O`_ `P`_ `Q`_ `R`_ `S`_ `T`_ `U`_ `V`_ `W`_ `X`_ `Y`_ `Z`_
 
@@ -18,33 +17,28 @@ Quickly jump to...
 A
 -
 
-Admin
-   An admin(istrator) is a user in Zammad who has special rights.
-   Admins can configure user accesses, time recording settings, templates,
-   and text modules and, on a higher level, integrations, reporting, etc.
-   So if you're looking to make a change within your Zammad and you find that
-   it doesn't work, find an admin in your organization and ask them – chances
-   are, they can help.
+Admin / 管理员
+   Admin(管理员)是在 Zammad 中拥有特殊权限的用户. 管理员可以配置用户访问权限,
+   时间记录设置, 模板和文本模块, 以及更高级别的集成, 报告等功能.
+   因此, 如果您在 Zammad 中希望进行更改但发现无法完成,
+   可以找到你组织中的管理员并向他们咨询, 很有可能他们可以提供帮助.
 
-Agent
-   An agent is what we call a user in Zammad who processes tickets/inquiries.
-   There are usually several or many agents who use Zammad regularly and
-   sometimes even consider it their main tool. Some of them are admins,
-   meaning that they can change settings, user rights, and so on (see above).
+Agent / 服务人员
+   在 Zammad 中, 我们称处理工单/查询的用户为服务人员 (Agent). 
+   通常有几个或许多服务人员经常使用 Zammad,, 甚至将其视为主要工具.
+   其中一些人是管理员, 意味着他们可以更改设置, 用户权限等 (请参见上文).
 
 API
-   An API (Application Programming Interface) is a connection that allows you
-   to create or modify business objects. Zammad has a REST
-   (`Representational State Transfer`_) API that allows our users,
-   among other things, to connect third-party systems to their instance
-   (such as social media or messengers).
+   API (Application Programming Interface) 是一种允许你创建或修改业务对象的接口.
+   Zammad 提供了一个 REST (`Representational State Transfer`_) 风格的 API,
+   它允许我们的用户连接第三方系统到他们的实例 (如社交媒体或即时通讯应用).
    
-   You can learn more on our `API landing page`_.
+   你可以在我们的 `API 介绍页`_ 了解更多的信息.
 
 .. _Representational State Transfer:
-   https://en.wikipedia.org/wiki/Representational_state_transfer
+   https://zh.wikipedia.org/wiki/%E8%A1%A8%E7%8E%B0%E5%B1%82%E7%8A%B6%E6%80%81%E8%BD%AC%E6%8D%A2
 
-.. _API landing page:
+.. _API 介绍页:
    https://zammad.com/en/product/features/rest-api
 
 Automation
